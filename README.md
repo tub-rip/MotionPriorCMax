@@ -1,5 +1,5 @@
 # MotionPriorCMax (ECCV 2024)
-The official repository for **[Motion-prior Contrast Maximization for Dense Continuous-Time Motion Estimation]**(https://arxiv.org/abs/2407.10802) accepted at **ECCV 2024** by [Friedhelm Hamann](https://friedhelmhamann.github.io/), [Ziyun Wang](https://ziyunclaudewang.github.io/), [Ioannis Asmanis](https://www.grasp.upenn.edu/people/ioannis-asmanis/), [Kenneth Chaney](https://scholar.google.com/citations?user=sIsVwNAAAAAJ&hl=en), [Guillermo Gallego](https://sites.google.com/view/guillermogallego),  [Kostas Daniilidis](https://www.cis.upenn.edu/~kostas/),
+The official repository for [**Motion-prior Contrast Maximization for Dense Continuous-Time Motion Estimation**](https://arxiv.org/abs/2407.10802) accepted at **ECCV 2024** by [Friedhelm Hamann](https://friedhelmhamann.github.io/), [Ziyun Wang](https://ziyunclaudewang.github.io/), [Ioannis Asmanis](https://www.grasp.upenn.edu/people/ioannis-asmanis/), [Kenneth Chaney](https://scholar.google.com/citations?user=sIsVwNAAAAAJ&hl=en), [Guillermo Gallego](https://sites.google.com/view/guillermogallego),  [Kostas Daniilidis](https://www.cis.upenn.edu/~kostas/),
 
 <h2 align="left">
 
