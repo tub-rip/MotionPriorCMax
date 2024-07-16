@@ -3,7 +3,7 @@ The official repository for [**Motion-prior Contrast Maximization for Dense Cont
 
 <h2 align="left">
 
-[Paper](https://arxiv.org/abs/2407.10802) | [Video (5min)](https://youtu.be/Pwnn3Xl9tSk) | [Talk (20min, NeuroPAC)](https://youtu.be/8b1FNsmsvNc)
+[Paper](https://arxiv.org/abs/2407.10802) | [Video (5min)](https://youtu.be/Pwnn3Xl9tSk) | [Talk (20min, NeuroPAC)](https://youtu.be/8b1FNsmsvNc) | [Data](https://drive.google.com/file/d/1YRlvjl0BiNxSQ-jZlw7QcebiBe7Zm2l9/view?usp=drive_link)
 
 </h2>
 
