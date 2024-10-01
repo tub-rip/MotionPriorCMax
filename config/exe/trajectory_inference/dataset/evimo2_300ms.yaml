@@ -1,0 +1,8 @@
+defaults:
+  - base
+
+name: evimo2
+extended_voxel_grid: True # If events outside the borders should be included. May slightly increase the performance.
+downsample: False
+flow_every_n_ms: 50
+flow_time: 300

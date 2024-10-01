@@ -1,0 +1,11 @@
+scipy
+imageio
+opencv-python
+h5py
+numba
+hdf5plugin
+pandas
+tensorboardX
+pytorch_lightning==2.1.3
+pykeops==2.2.2
+hydra-core==1.3.2

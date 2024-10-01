@@ -1,0 +1,16 @@
+common:
+  height: 480
+  width: 640
+  num_bins: 15
+
+data:
+  root_dir: data/dsec
+  polarity_aware_batching: true
+
+model:
+  num_basis: 1
+  basis_type: polynomial
+  patch_size: 4
+  ckpt_path: weights/unet_dsec_ours-poly-k1_Tab4L7.pth
+
+output_dir: outputs/dsec_inference

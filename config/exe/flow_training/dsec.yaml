@@ -1,0 +1,38 @@
+common:
+  height: 480
+  width: 640
+  num_bins: 15
+  polarity_aware_batching: true
+  patch_size: 4
+
+model:
+  lr: 0.0001
+  model_type: default
+  num_basis: 1
+  basis_type: polynomial
+
+loss:
+  loss_name: FOCUS
+  num_tref: 1
+  num_knn: 32
+  smooth_weight: 0.003
+  lut_superpixel_size: 4
+  focus_loss_norm: l1
+  dist_norm: l2
+  scale_iwe_by_dt: true
+  mask_image_border: true
+  interpolation_scheme: mean
+  smooth_type: on_flow_to_tref
+
+data:
+  dataset: DSEC
+  data_path: data/dsec/train
+  num_workers: 32
+  batch_size: 14
+  norm_type: mean_std
+  quantile: 0
+
+trainer:
+  max_epochs: 100
+  #limit_train_batches: 0.01
+  #limit_val_batches: 0.1

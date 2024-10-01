@@ -1,0 +1,47 @@
+# @package _global_
+training:
+  batch_size: 6
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  lr_scheduler:
+    use: true
+model:
+  num_bins:
+    context: 41
+    correlation: 25
+  bezier_degree: 10
+  use_boundary_images: false
+  use_events: true
+  correlation:
+    ev:
+      target_indices: [8, 16, 24, 32, 40]
+      levels: [1, 1, 1, 1, 4]
+      radius: [4, 4, 4, 4, 4]
+  curve_type: BEZIER
+loss:
+  type: FOCUS
+  num_tref: 1
+  num_knn: 32
+  num_bins: 41
+  smooth_weight: 0.06
+  lut_superpixel_size: 4
+  focus_loss_norm: l1
+  dist_norm: l2
+  scale_iwe_by_dt: true
+  mask_image_border: true
+  interpolation_scheme: mean
+  smooth_type: on_flow_to_next
+  polarity_aware_batching: true
+  patch_size: 4
+dataset:
+  name: evimo2
+  extended_voxel_grid: True
+  downsample: False
+  flow_every_n_ms: 50
+  path: /home/datasets/evimo2/samsung_mono
+  data_augm: false
+hardware:
+  gpus: 1
+  num_workers: 12
+run_name: selfsup_bezier
+checkpoint: weights/raft-spline_evimo2-300ms_ours-selfsup_Tab2L5.ckpt
