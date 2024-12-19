@@ -1,0 +1,35 @@
+# @package _global_
+training:
+  batch_size: 10
+  learning_rate: 0.0001
+  weight_decay: 0.0001
+  lr_scheduler:
+    use: true
+model:
+  num_bins:
+    context: 41
+    correlation: 25
+  bezier_degree: 10
+  use_boundary_images: false
+  use_events: true
+  correlation:
+    ev:
+      target_indices: [8, 16, 24, 32, 40] # for 41 context bins
+      levels: [1, 1, 1, 1, 4]
+      radius: [4, 4, 4, 4, 4]
+  curve_type: BEZIER
+loss:
+  type: SUPERVISED
+  multi_loss: true
+dataset:
+  name: evimo2
+  extended_voxel_grid: True
+  downsample: False
+  flow_every_n_ms: 50
+  path: /home/datasets/evimo2/samsung_mono
+  data_augm: false
+hardware:
+  gpus: 1
+  num_workers: 12
+run_name: in-domain_bezier
+checkpoint: weights/raft-spline_evimo2_300ms_in-domain_Tab2L4.ckpt

@@ -4,7 +4,7 @@ The official repository for [**Motion-prior Contrast Maximization for Dense Cont
 
 <h2 align="left">
 
-[Paper](https://arxiv.org/abs/2407.10802) | [Video (5min)](https://youtu.be/Pwnn3Xl9tSk) | [Talk (20min, NeuroPAC)](https://youtu.be/8b1FNsmsvNc) | [Data](https://drive.google.com/file/d/1YRlvjl0BiNxSQ-jZlw7QcebiBe7Zm2l9/view?usp=drive_link)
+[Paper](https://arxiv.org/abs/2407.10802) | [Video (5min)](https://youtu.be/Pwnn3Xl9tSk) | [Talk (20min, NeuroPAC)](https://youtu.be/8b1FNsmsvNc) | [Data](https://drive.google.com/drive/folders/1rIScxpsw13skVMW1RxqNxw3nWgVyyU6h?usp=drive_link)
 
 </h2>
 
@@ -51,7 +51,7 @@ The training script has logging functionality based on wandb. If you want to use
 pip install -U 'wandb>=0.12.10'
 ```
 
-Otherwise, ignore this installation.
+Otherwise, ignore this installation and the basic metrics are logged by tensorboard.
 
 ## Optical Flow
 
@@ -67,7 +67,7 @@ unzip test_events.zip
 rm test_events.zip
 ```
 
-2. Download the model weights from [this Google Drive link](https://drive.google.com/file/d/1CPA4wXqZtLAc7o1haqWP-wZsM1dJHcX0/view?usp=sharing) and put them into a folder called `weights`. The resulting folder structure should be:
+2. Download the [EVIMO2 continuous flow groundtruth](https://drive.google.com/file/d/1YRlvjl0BiNxSQ-jZlw7QcebiBe7Zm2l9/view?usp=drive_link) data and copy them to the same folder structure as the event data.
 
 ```
 MotionPriorCmax
@@ -164,8 +164,10 @@ If you use this work in your research, please consider citing:
   author        = {Friedhelm Hamann, Ziyun Wang, Ioannis Asmanis, Kenneth Chaney, Guillermo Gallego, Kostas Daniilidis},
   title         = {Motion-prior Contrast Maximization for Dense Continuous-Time Motion Estimation},
   booktitle     = {European Conference on Computer Vision (ECCV)},
-  doi           = {},
-  year          = 2024
+  pages         = {18--37},
+  doi           = {https://doi.org/10.1007/978-3-031-72646-0_2},
+  year          = 2024,
+  organization  = {Springer}
 }
 ```
 
