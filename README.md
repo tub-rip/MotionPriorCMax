@@ -10,6 +10,22 @@ The official repository for [**Motion-prior Contrast Maximization for Dense Cont
 
 [![Motion-prior Contrast Maximization for Dense Continuous-Time Motion Estimation](docs/img/video_cover.png)](https://youtu.be/Pwnn3Xl9tSk)
 
+## Citation
+
+If you use this work in your research, please consider citing:
+
+```bibtex
+@InProceedings{Hamann24eccv,
+  author        = {Friedhelm Hamann and Ziyun Wang and Ioannis Asmanis and Kenneth Chaney and
+                   Guillermo Gallego and Kostas Daniilidis},
+  title         = {Motion-prior Contrast Maximization for Dense Continuous-Time Motion Estimation},
+  booktitle     = {European Conference on Computer Vision (ECCV)},
+  pages         = {18--37},
+  doi           = {10.1007/978-3-031-72646-0\_2},
+  year          = 2024
+}
+```
+
 ## Table of Contents
 
 1. [Quickstart](#quickstart)
@@ -19,8 +35,8 @@ The official repository for [**Motion-prior Contrast Maximization for Dense Cont
 3. [Trajectory Prediction](#trajectory-prediction)
    - [Inference on EVIMO2](#inference-on-evimo2)
    - [Inference on MultiFlow](#inference-on-multiflow)
-4. [Citation](#citation)
-5. [Acknowledgements](#acknowledgements)
+4. [Acknowledgements](#acknowledgements)
+5. [Related works](#related-works)
 6. [Additional Resources](#additional-resources)
 
 ## Quickstart
@@ -155,31 +171,25 @@ Switch the experiment config according to the chosen checkpoint.
 
 (Details to be added)
 
-## Citation
-
-If you use this work in your research, please consider citing:
-
-```bibtex
-@InProceedings{Hamann24eccv,
-  author        = {Friedhelm Hamann, Ziyun Wang, Ioannis Asmanis, Kenneth Chaney, Guillermo Gallego, Kostas Daniilidis},
-  title         = {Motion-prior Contrast Maximization for Dense Continuous-Time Motion Estimation},
-  booktitle     = {European Conference on Computer Vision (ECCV)},
-  pages         = {18--37},
-  doi           = {https://doi.org/10.1007/978-3-031-72646-0_2},
-  year          = 2024,
-  organization  = {Springer}
-}
-```
-
 ## Acknowledgements
 
 Many of the low-level functions for contrast maximization are inspired by the implementation [Secrets of Event-based Optical Flow](https://github.com/tub-rip/event_based_optical_flow) and the implementation of the Bflow network was influenced by [BFlow](https://github.com/uzh-rpg/bflow). We thank the authors for their excellent work.
 
+## Related works
+
+* [Secrets of Event-Based Optical Flow (TPAMI 2024)](https://github.com/tub-rip/event_based_optical_flow)
+* [Event Collapse in Contrast Maximization Frameworks](https://github.com/tub-rip/event_collapse)
+* [CMax-SLAM (TRO 2024)](https://github.com/tub-rip/cmax_slam)
+* [EVILIP: Event-based Image Reconstruction as a Linear Inverse Problem (TPAMI 2022)](https://github.com/tub-rip/event_based_image_rec_inverse_problem)
+
 ## Additional Resources
 
 * [Recording Software (CoCapture)](https://github.com/tub-rip/CoCapture)
-* [Homepage (TU Berlin, RIP lab)](https://sites.google.com/view/guillermogallego/research/event-based-vision)
+* [EBOS: Event-based Background-Oriented Schlieren (TPAMI 2023)](https://github.com/tub-rip/event_based_bos)
+* [EPBA: Event-based Photometric Bundle Adjustment](https://github.com/tub-rip/epba)
+* [ES-PTAM: Event-based Stereo Parallel Tracking and Mapping](https://github.com/tub-rip/ES-PTAM)
+* [Research page (TU Berlin, RIP lab)](https://sites.google.com/view/guillermogallego/research/event-based-vision)
 * [Homepage (Science Of Intelligence)](https://www.scienceofintelligence.de/)
-* [Event Camera Class at TU Berlin](https://sites.google.com/view/guillermogallego/teaching/event-based-robot-vision)
+* [Course at TU Berlin](https://sites.google.com/view/guillermogallego/teaching/event-based-robot-vision)
 * [Survey paper](http://rpg.ifi.uzh.ch/docs/EventVisionSurvey.pdf)
-* [List of Event Vision Resources](https://github.com/uzh-rpg/event-based_vision_resources)
+* [List of Event-based Vision Resources](https://github.com/uzh-rpg/event-based_vision_resources)
