@@ -79,7 +79,7 @@ class Sequence(Dataset):
         else:
             raise ValueError(f"Invalid phase: {self.phase}")
         
-        self._finalizer = weakref.finalize(self, self._close_h5_file)
+        self._finalizer = weakref.finalize(self, self._close_h5_file, self.event_slicer.h5f)
 
     def _initialize_event_data(self, seq_path: Path):
         """Load event data and rectify map from h5 files."""
